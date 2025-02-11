@@ -2,7 +2,6 @@ from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from aiogram.types import Message
 
-from background import keep_alive
 
 # Вместо BOT TOKEN HERE нужно вставить токен вашего бота, полученный у @BotFather
 BOT_TOKEN = '6085828466:AAEOaED6ik-5uJso1XiwhQZ0y8yWo7p4v74'
