@@ -2,6 +2,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from aiogram.types import Message
 
+from background import keep_alive
 
 # Вместо BOT TOKEN HERE нужно вставить токен вашего бота, полученный у @BotFather
 BOT_TOKEN = '6085828466:AAEOaED6ik-5uJso1XiwhQZ0y8yWo7p4v74'
@@ -30,5 +31,6 @@ async def process_help_command(message: Message):
 async def send_echo(message: Message):
     await message.reply(text=message.text)
 
+keep_alive()
 if __name__ == '__main__':
     dp.run_polling(bot)
